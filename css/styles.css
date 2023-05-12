@@ -3,8 +3,14 @@ body {
 }
 /* header */
 
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -16,11 +22,10 @@ body {
   text-transform: uppercase;
 
   color: #4d5ae5;
-  text-decoration: none;
 }
 
 .header-logo-sekond-part {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -42,10 +47,9 @@ body {
   letter-spacing: 0.02em;
 
   color: #2e2f42;
-  list-style: none;
 }
-.header-item-link {
-  text-decoration: none;
+.header-item-link:active {
+  color: #404bbf;
 }
 
 .header-address-list {
@@ -56,18 +60,16 @@ body {
   letter-spacing: 0.02em;
 
   color: #434455;
-  list-style: none;
 }
-.header-address-link {
-  text-decoration: none;
+.header-address-mail:active {
+  color: #404bbf;
 }
 /* main */
 /* hero */
 .hero {
   background: #2e2f42;
 }
-.hero-text {
-  font-weight: 700;
+.hero-title {
   font-size: 56px;
   line-height: 1.07;
 
@@ -77,6 +79,7 @@ body {
   color: #ffffff;
 }
 .button-text {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -91,6 +94,94 @@ body {
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* blok2-qualiti */
+
+.quality {
+}
+.quality-list {
+}
+.quality-item {
+}
+.quality-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: #2e2f42;
+}
+.quality-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: #434455;
+}
+
+/* blok3-about */
+.about {
+}
+.about-title {
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: #2e2f42;
+}
+.about-list {
+}
+.about-item {
+}
+
+/*  blok3-team  */
+
+.team {
+}
+.team-title-top {
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: #2e2f42;
+}
+.team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #2e2f42;
+}
+.team-list {
+}
+.team-item {
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #434455;
 }
 
 /* footer */
@@ -99,7 +190,7 @@ body {
   background: #2e2f42;
 }
 .footer-logo-sekond-part {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -113,11 +204,77 @@ body {
   color: #f4f4fd;
 }
 .footer-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
 
   color: #f4f4fd;
+}
+
+/* portfolio */
+/* hero */
+.portfolio-hero {
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.portfolio-hero-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #4d5ae5;
+}
+.portfolio-hero-btn {
+  background: #f4f4fd;
+
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.portfolio-hero-btn:hover {
+  background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+/* about */
+.portfolio-about {
+}
+.portfolio-about-list {
+}
+.portfolio-about-item {
+}
+.portfolio-about-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: #2e2f42;
+}
+.portfolio-about-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: #434455;
 }
