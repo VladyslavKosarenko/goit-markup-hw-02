@@ -9,6 +9,12 @@ body {
 .link {
   text-decoration: none;
 }
+:root {
+  --first-btn-color: #4d5ae5;
+  --second-btn-color: #404bbf;
+  --background-first-color: #ffffff;
+  --background-second-color: #2e2f42;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -24,6 +30,11 @@ body {
   color: #4d5ae5;
 }
 
+.header {
+  background: #ffffff;
+
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-logo-sekond-part {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -48,11 +59,13 @@ body {
 
   color: #2e2f42;
 }
-.header-item-link:active {
+.header-item-link:active,
+.header-item-link:hover,
+.header-item-link:focus {
   color: #404bbf;
 }
 
-.header-address-list {
+.header-address-mail {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -61,13 +74,31 @@ body {
 
   color: #434455;
 }
-.header-address-mail:active {
+
+.header-address-mail:active,
+.header-address-mail:focus,
+.header-address-mail:hover {
   color: #404bbf;
 }
+
+.header-address-phone {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: #434455;
+}
+.header-address-phone:hover,
+.header-address-phone:focus {
+  color: #404bbf;
+}
+
 /* main */
 /* hero */
 .hero {
-  background: #2e2f42;
+  background: var(--background-second-color);
 }
 .hero-title {
   font-size: 56px;
@@ -91,13 +122,13 @@ body {
   color: #ffffff;
 }
 .button {
-  background: #4d5ae5;
+  background: var(--first-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
 }
 .button:hover {
-  background: #404bbf;
+  background: var(--second-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -149,6 +180,7 @@ body {
 /*  blok3-team  */
 
 .team {
+  background: #f4f4fd;
 }
 .team-title-top {
   font-size: 36px;
@@ -173,6 +205,10 @@ body {
 .team-list {
 }
 .team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-text {
   font-size: 16px;
@@ -229,7 +265,11 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.portfolio-hero-list {
+.portfolio-hero-item {
+}
+.portfolio-hero-btn {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -239,9 +279,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #4d5ae5;
-}
-.portfolio-hero-btn {
+  color: var(--first-btn-color);
   background: #f4f4fd;
 
   border: 1px solid #e7e9fc;
@@ -249,17 +287,20 @@ body {
   cursor: pointer;
 }
 .portfolio-hero-btn:hover {
-  background: #404bbf;
+  background: var(--second-btn-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-/* about */
+
 .portfolio-about {
 }
 .portfolio-about-list {
 }
 .portfolio-about-item {
+  background: #ffffff;
+
+  border: 1px solid #e7e9fc;
 }
 .portfolio-about-title {
   font-weight: 500;
