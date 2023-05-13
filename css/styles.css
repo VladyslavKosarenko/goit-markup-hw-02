@@ -1,5 +1,13 @@
+:root {
+  --first-btn-color: #4d5ae5;
+  --second-btn-color: #404bbf;
+  --title-color: #2e2f42;
+  --text-color: #434455;
+  --item-link-hover-focus-active: #404bbf;
+}
 body {
   font-family: "Roboto", sans-serif;
+  color: #434455;
 }
 /* header */
 
@@ -9,12 +17,7 @@ body {
 .link {
   text-decoration: none;
 }
-:root {
-  --first-btn-color: #4d5ae5;
-  --second-btn-color: #404bbf;
-  --background-first-color: #ffffff;
-  --background-second-color: #2e2f42;
-}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -47,7 +50,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #2e2f42;
+  color: var(--title-color);
 }
 
 .header-list {
@@ -57,12 +60,12 @@ body {
 
   letter-spacing: 0.02em;
 
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .header-item-link:active,
 .header-item-link:hover,
 .header-item-link:focus {
-  color: #404bbf;
+  color: var(--item-link-hover-focus-active);
 }
 
 .header-address-mail {
@@ -72,13 +75,13 @@ body {
 
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--text-color);
 }
 
 .header-address-mail:active,
 .header-address-mail:focus,
 .header-address-mail:hover {
-  color: #404bbf;
+  color: var(--item-link-hover-focus-active);
 }
 
 .header-address-phone {
@@ -88,17 +91,17 @@ body {
 
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--text-color);
 }
 .header-address-phone:hover,
 .header-address-phone:focus {
-  color: #404bbf;
+  color: var(--item-link-hover-focus-active);
 }
 
 /* main */
 /* hero */
 .hero {
-  background: var(--background-second-color);
+  background: var(--title-color);
 }
 .hero-title {
   font-size: 56px;
@@ -148,7 +151,7 @@ body {
 
   letter-spacing: 0.02em;
 
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .quality-text {
   font-size: 16px;
@@ -156,7 +159,7 @@ body {
 
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--text-color);
 }
 
 /* blok3-about */
@@ -170,7 +173,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .about-list {
 }
@@ -190,7 +193,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .team-title {
   font-weight: 500;
@@ -200,7 +203,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .team-list {
 }
@@ -217,13 +220,13 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--text-color);
 }
 
 /* footer */
 
 .footer {
-  background: #2e2f42;
+  background: var(--title-color);
 }
 .footer-logo-sekond-part {
   font-family: "Raleway", sans-serif;
@@ -309,7 +312,7 @@ body {
 
   letter-spacing: 0.02em;
 
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .portfolio-about-text {
   font-size: 16px;
@@ -317,5 +320,5 @@ body {
 
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--text-color);
 }
